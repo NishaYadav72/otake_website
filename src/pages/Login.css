@@ -1,0 +1,284 @@
+/* =========================
+   LOGIN SECTION
+========================= */
+
+.login-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.login-left {
+  width: 45%;
+}
+
+.login-badge {
+  background: #f5c242;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* OR */
+.or {
+  text-align: center;
+  margin: 20px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  outline: none;
+}
+
+/* Options */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.forgot {
+  color: #6b7280;
+  cursor: pointer;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Register */
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.register span {
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.login-right {
+  position: relative;
+  width: 50%;
+  background: linear-gradient(180deg, #f3e8ff, #e9d5ff);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Main Image */
+.login-illustration {
+  width: 85%;
+  z-index: 2;
+}
+
+/* Floating Cards */
+.floating-card {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+/* Happy Customer */
+.floating-card.happy {
+  top: 30%;
+  right: 30px;
+}
+
+.floating-card.happy h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.floating-card.happy p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Designers Card */
+.floating-card.designers {
+  bottom: 25%;
+  left: 30px;
+  width: 180px;
+}
+
+.floating-card.designers h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.floating-card.designers span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.progress {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 62%;
+  height: 100%;
+  background: #8b5cf6;
+  border-radius: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .login-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-right {
+    min-height: 380px;
+  }
+
+  .login-illustration {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-title {
+    font-size: 26px;
+  }
+
+  .login-right {
+    min-height: 300px;
+    border-radius: 20px;
+  }
+
+  .login-illustration {
+    width: 85%;
+    max-width: 260px;
+  }
+
+  .floating-card {
+    padding: 10px 12px;
+    border-radius: 12px;
+  }
+
+  .floating-card.happy {
+    top: 15%;
+    right: 15px;
+  }
+
+  .floating-card.designers {
+    bottom: 15%;
+    left: 15px;
+    width: 150px;
+  }
+
+  .floating-card h4 {
+    font-size: 16px;
+  }
+
+  .floating-card p,
+  .floating-card span {
+    font-size: 11px;
+  }
+}

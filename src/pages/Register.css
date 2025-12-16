@@ -1,0 +1,147 @@
+/* PAGE BG */
+.register-section {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #f7f7f7 0%,
+    #f1f0ff 50%,
+    #f7f7f7 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* FLOATING EMOJIS */
+.floating-emoji {
+  position: absolute;
+  font-size: 48px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+}
+
+.floating-emoji.left {
+  left: 120px;
+  top: 40%;
+}
+
+.floating-emoji.right {
+  right: 120px;
+  bottom: 40%;
+}
+
+/* CENTER BOX */
+.register-box {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* BADGE */
+.register-badge {
+  background: #f5c242;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.register-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  outline: none;
+}
+
+/* OPTIONS */
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.forgot {
+  color: #6b7280;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.register-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* OR */
+.or {
+  margin: 22px 0;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* GOOGLE */
+.google-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* BOTTOM */
+.bottom-text {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.bottom-text span {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .floating-emoji {
+    display: none;
+  }
+
+  .register-title {
+    font-size: 26px;
+  }
+}
