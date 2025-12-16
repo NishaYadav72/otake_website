@@ -488,7 +488,7 @@ const Home = () => {
 
 
 
- (
+ 
     <section style={styles.blogSection}>
       <div style={styles.blogWrapper}>
 
@@ -584,7 +584,7 @@ const Home = () => {
 
 
 
-     (
+     
     <section style={styles.sectionWrapper}>
       <div style={styles.cardWrapper}>
         {/* Heading */}
@@ -1319,97 +1319,100 @@ readMore: {
 
 
 blogSection: {
-    width: "100%",
-    padding: "90px 20px",
-    background: "linear-gradient(180deg, #f4efff 0%, #eef4ff 100%)",
-    display: "flex",
-    justifyContent: "center",
-  },
+  width: "100%",
+  padding: "90px 20px",
+  background: "linear-gradient(180deg, #f4efff 0%, #eef4ff 100%)",
+  display: "flex",
+  justifyContent: "center",
+},
 
-  blogWrapper: {
-    maxWidth: "1200px",
-    textAlign: "center",
-  },
+blogWrapper: {
+  maxWidth: "1200px",
+  textAlign: "center",
+},
 
-  blogBadge: {
-    display: "inline-block",
-    background: "#f5b942",
-    color: "#000",
-    fontSize: "11px",
-    fontWeight: "700",
-    padding: "4px 12px",
-    borderRadius: "6px",
-    marginBottom: "14px",
-  },
+blogBadge: {
+  display: "inline-block",
+  background: "#f5b942",
+  color: "#000",
+  fontSize: "11px",
+  fontWeight: "700",
+  padding: "4px 12px",
+  borderRadius: "6px",
+  marginBottom: "14px",
+},
 
-  blogHeading: {
-    fontSize: "38px",
-    fontWeight: "700",
-    color: "#111",
-    lineHeight: "1.25",
-  },
+blogHeading: {
+  fontSize: "38px",
+  fontWeight: "700",
+  color: "#111",
+  lineHeight: "1.25",
+},
 
-  blogSubHeading: {
-    fontSize: "14px",
-    color: "#555",
-    marginTop: "10px",
-    marginBottom: "60px",
-  },
+blogSubHeading: {
+  fontSize: "14px",
+  color: "#555",
+  marginTop: "10px",
+  marginBottom: "60px",
+},
 
-  blogCards: {
-    display: "flex",
-    flexWrap: "wrap",          // ← responsive: wrap cards to next line
-    gap: "24px",
-    justifyContent: "space-between",
-  },
+blogCards: {
+  display: "flex",
+  gap: "20px",
+  justifyContent: "center", // small screen me center align
+  flexWrap: "wrap",          // stacked cards ke liye
+},
 
-  blogCard: {
-    flex: "1 1 32%",           // ← responsive: shrink and grow
-    minWidth: "280px",         // ← ensures minimum width for mobile
-    background: "#fff",
-    borderRadius: "18px",
-    padding: "16px",
-    boxShadow: "0 10px 30px rgba(120,120,255,0.18)",
-  },
+blogCard: {
+  flex: "0 0 32%",  // desktop → 3 cards ek row me
+  background: "#fff",
+  borderRadius: "18px",
+  padding: "0px",
+  boxShadow: "0 10px 30px rgba(120,120,255,0.18)",
+  marginBottom: "20px",  // spacing for stacked cards
+  minWidth: "280px",     // ensures proper stacking on mobile
+  marginLeft: "auto",    // mobile me center
+  marginRight: "auto",   // mobile me center
+},
 
-  blogImage: {
-    background: "#eef3ff",
-    borderRadius: "14px",
-    height: "190px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "#999",
-    marginBottom: "14px",
-  },
 
-  blogTag: {
-    fontSize: "11px",
-    color: "#666",
-    marginBottom: "6px",
-  },
+blogImage: {
+  background: "#eef3ff",
+  borderRadius: "14px",
+  height: "190px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#999",
+  marginBottom: "14px",
+},
 
-  blogTitle: {
-    fontSize: "18px",
-    fontWeight: "700",
-    color: "#111",
-    marginBottom: "8px",
-  },
+blogTag: {
+  fontSize: "11px",
+  color: "#666",
+  marginBottom: "6px",
+},
 
-  blogDesc: {
-    fontSize: "13px",
-    color: "#666",
-    lineHeight: "1.6",
-    marginBottom: "14px",
-  },
+blogTitle: {
+  fontSize: "18px",
+  fontWeight: "700",
+  color: "#111",
+  marginBottom: "8px",
+},
 
-  blogLink: {
-    fontSize: "13px",
-    fontWeight: "600",
-    color: "#555",
-    cursor: "pointer",
-  },
+blogDesc: {
+  fontSize: "13px",
+  color: "#666",
+  lineHeight: "1.6",
+  marginBottom: "14px",
+},
 
+blogLink: {
+  fontSize: "13px",
+  fontWeight: "600",
+  color: "#555",
+  cursor: "pointer",
+},
 
 
 
