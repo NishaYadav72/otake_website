@@ -710,7 +710,7 @@ featuresSection: {
   justifyContent: "center",
 },
 featuresContent: {
-  maxWidth: "1100px",
+  maxWidth: "1200px",
   textAlign: "center",
   display: "flex",
   flexDirection: "column",
